@@ -1,0 +1,53 @@
+.header {
+  text-align: center;
+  display: block;
+  background: #ac2727;
+}
+body {
+  background-color: rgb(250, 235, 215, 0.8);
+}
+h1 {
+  text-align: center;
+  font-family: cursive;
+  font-size: 100px;
+  line-height: 10px;
+}
+h2 {
+  text-align: center;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: lighter;
+}
+.image {
+  display: block;
+  text-align: center;
+  margin: 0 auto;
+  border-radius: 15px;
+}
+.intro {
+  padding: 10px;
+  font-size: 25px;
+  display: block;
+  margin: 0 auto;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.shop {
+  color: black;
+  background: #ac2727;
+  display: block;
+  margin: 30px auto;
+  padding: 20px 30px;
+  border: 2px solid #ac2727;
+  border-radius: 40px;
+  box-shadow: 2px 1px #808080;
+  transition: all 200ms ease-in-out;
+}
+.shop:hover {
+  cursor: pointer;
+  background: #ffffff;
+}
+.coder {
+  font-family: cursive;
+  font-weight: lighter;
+  text-align: right;
+}
