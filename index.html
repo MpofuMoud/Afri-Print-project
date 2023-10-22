@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<!-- saved from url=(0067)file:///C:/Users/Asus/OneDrive/Desktop/shecodes/basicsproject1.html -->
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AFRI PRINT</title>
+    <style>
+      .header {
+        text-align: center;
+        display: block;
+        background: #ac2727;
+      }
+      body {
+        background-color: rgb(250, 235, 215, 0.8);
+      }
+      h1 {
+        text-align: center;
+        font-family: cursive;
+        font-size: 100px;
+        line-height: 10px;
+      }
+      h2 {
+        text-align: center;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        font-weight: lighter;
+      }
+      .image {
+        display: block;
+        text-align: center;
+        margin: 0 auto;
+        border-radius: 15px;
+      }
+      .intro {
+        padding: 10px;
+        font-size: 25px;
+        display: block;
+        margin: 0 auto;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      }
+
+      .shop {
+        color: black;
+        background: #ac2727;
+        display: block;
+        margin: 30px auto;
+        padding: 20px 30px;
+        border: 2px solid #ac2727;
+        border-radius: 40px;
+        box-shadow: 2px 1px #808080;
+        transition: all 200ms ease-in-out;
+      }
+      .shop:hover {
+        cursor: pointer;
+        background: #ffffff;
+      }
+      .coder {
+        font-family: cursive;
+        font-weight: lighter;
+        text-align: right;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="header">
+      <h1>
+        <img
+          src="./AFRI PRINT_files/africa.jpeg"
+          alt="Afro colors"
+          width="120px"
+        />
+        AFRI PRINT
+      </h1>
+      <h2><em>Your Style, Your Culture, Your Royalty</em></h2>
+      <hr />
+    </div>
+    <p class="image">
+      <img
+        src="./AFRI PRINT_files/afri_print.jpg"
+        alt="clothing"
+        width="400px "
+      />
+    </p>
+
+    <p class="intro">
+      <strong>AFRI PRINT</strong> is a clothing brand with a purpose of bringing
+      awareness of African and Black culture, traditions, styles and much more.
+      <span>
+        Our clothes are made with love and care, and we use a hand-made fabric
+        shipped all the way from Ghana named <strong>Kente</strong>.
+        <br />
+
+        <a href="https://en.wikipedia.org/wiki/Kente_cloth" target="_blank">
+          Read more about Kente
+        </a></span
+      >
+    </p>
+
+    <button class="shop">Shop with us</button>
+    <script>
+      function shopWithUs() {
+        let name = prompt("What is your name?");
+        let country = prompt("What country are you shopping from?");
+        country = country.toLowerCase();
+        country = country.trim();
+
+        if (country === "poland") {
+          alert(
+            "Hi " +
+              name +
+              ", Please visit our store located in Warsaw, old town"
+          );
+        } else {
+          alert("Hi " + name + ", Thank you for shopping with us!!!");
+        }
+      }
+      let shopButton = document.querySelector(".shop");
+
+      shopButton.addEventListener("click", shopWithUs);
+    </script>
+
+    <div class="coder">
+      <em>page built by</em>
+      <a
+        href="https://www.linkedin.com/in/moud-mpofu-5902a5152/"
+        target="_blank"
+        >Moud Mpofu</a
+      >
+    </div>
+  </body>
+</html>
